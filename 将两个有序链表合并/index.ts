@@ -21,6 +21,7 @@ function mergeTwoList(l1: ListNode, l2: ListNode): ListNode {
     cur = cur.next;
   }
 
+  // 这种情况是因为其中一个链表已经遍历完成，把剩下的直接接倒cur后面
   cur.next = l1 !== null ? l1 : l2
 
   return head.next;
