@@ -3,9 +3,10 @@
  * void addWord(word)
  * bool search(word)
  * search(word) 可以搜索文字或正则表达式字符串，字符串只包含字母 . 或 a-z 。
- * . 可以表示任何一个字母。
+ * .可以表示任何一个字母。
  */
 class WordDictionary{
+
   private wordMap = new Map<number, string[]>();
 
   public addWord(s: string): void {
