@@ -1,0 +1,83 @@
+@mixin clearfix() {
+  zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// 左右padding
+@mixin pb($v: 0, $b: rem(32)) {
+  padding: $v $b;
+}
+
+// 底部边框
+@mixin border-b {
+  border-bottom: rem(2) solid #e2e7f1;
+}
+
+// 左右排列
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin word-ellipsis {
+  white-space: nowrap;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin input-placeholder {
+  input {
+    width: 100%;
+    padding-right: rem(32);
+    &::-webkit-input-placeholder {
+      color: #bababf;
+    }
+    &:-moz-placeholder {
+      color: #bababf;
+    }
+    &::-moz-placeholder {
+      color: #bababf;
+    }
+    &:-ms-input-placeholder {
+      color: #bababf;
+    }
+  }
+}
+
+@mixin border-1px($color) {
+  position: relative;
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+    &::after {
+      transform: scaleY(0.7);
+      content: "";
+      width: 100%;
+      border-bottom: 1px solid $color;
+      height: 1px;
+      position: absolute;
+      left:0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    &::after {
+      transform: scaleY(0.5);
+      content: "";
+      width: 100%;
+      border-bottom: 1px solid $color;
+      height: 1px;
+      position: absolute;
+      left:0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.content{
+  height: 100%;
+  background: #f7f8fa;
+}
+.itemBox{
+  padding: 20px;
+}
+  .item{
+    display:flex;
+    padding:30px;
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #48505a;
+    background-color: #ffffff;
+    border-radius: 20px;
+    .avatar{
+      width: 80px;
+      height:80px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: top;
+    }
+    .detail{
+      margin-left: 30px;
+      width: 50%;
+      .info{
+        span{
+          margin-left: 10px;
+        }
+        .name{
+          font-weight: 700;
+          font-size:28px;
+        }
+      }
+      .position{
+        margin-left:10px;
+        margin-top:15px;
+        color: #ccc;
+      }
+    }
+    .end{
+      text-align: center;
+      width: 30%;
+      .num{
+        color: red;
+        height: 30px;
+      }
+      .time{
+        margin-top:15px;
+        color: #ccc;
+      }
+    }
+  }
+
+.no{
+  text-align: center;
+  color: #949494;
+  margin-top: 50%;
+}

@@ -1,0 +1,56 @@
+.pageWrapper {
+  height: 100%;
+  background: #f7f8fa;
+}
+.userSection {
+  height: 400px;
+  width: 100%;
+  background: url("@/assets/common/wode-beijing@3x.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  top: -2px; // 上面有个白边，不知道为啥
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  margin-top: 33px;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 33px;
+  font-family: PingFangSC-Medium;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.listWrapper {
+  margin: 0 32px;
+  background: #ffffff;
+  box-shadow: 0 3px 31px 0 rgba(174, 203, 237, 0.21);
+  position: relative;
+  top: -140px;
+  border-radius: 8px;
+}
+
+.list {
+  padding: 32px 0 0 20px;
+  div {
+    font-family: PingFangSC-Regular;
+    font-size: 32px !important;
+    color: #48505a;
+  }
+  img {
+    width: 45px !important;
+    height: 48px !important;
+  }
+}
+
+.underlineFix {
+  margin: 0 20px 0 100px !important;
+}

@@ -1,0 +1,35 @@
+
+
+.medicalRecord {
+  background: #ffffff;
+  border-radius: 8px;
+  .recordItem{
+    :global(.am-list-extra){
+      min-width:30%;
+    }
+    .text {
+      color: #888;
+    }
+  }
+  .underline{
+    margin:0;
+  }
+  
+}
+
+.status{
+  color: #f50;
+  float: right;
+  line-height: 2;
+}
+
+  .btn{
+    border: 1px solid #f50;
+    border-radius: 10px;
+    background: #ffffff;
+    padding:10px 30px;
+    margin-left: 30px;
+    color: #f50;
+  }
+
+

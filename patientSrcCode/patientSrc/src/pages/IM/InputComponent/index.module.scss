@@ -1,0 +1,36 @@
+.inputComponent {
+  height: 100px;
+  display: flex;
+  padding: 20px;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  border-radius: 8px;
+  height: 100%;
+  flex: 1;
+  border:1px solid #ccc;
+  padding-left: 10px;
+}
+
+.btn {
+  margin-left: 20px;
+  height: 60px;
+  width: 100px;
+  border-radius: 8px;
+  background: blue;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+
+.inputFile {
+  display: none;
+}
+
+.uploadIcon {
+  height: 80%;
+  margin-right: 10px;
+}

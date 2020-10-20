@@ -1,0 +1,21 @@
+.listVewBox{
+  height:100%;
+  :global(.am-list-header){
+    padding:0;
+  }
+  .doctorTitle{
+    font-size: 38px;
+    color: #48505a;
+  }
+  :global(.am-list-body){
+    background-color:transparent;
+  }
+  :global(.am-list-footer){
+    padding:0;
+    .doctorFooter{
+      padding:30px;
+      background-color:#f7f8fa;
+      text-align:center;
+    }
+  }
+}

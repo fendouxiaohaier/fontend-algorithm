@@ -1,0 +1,43 @@
+@import "~@/styles/mixin.scss";
+.recordDetailWrapper {
+  padding-bottom: 100px;
+}
+
+.desc {
+  padding: 32px;
+}
+
+.text {
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #48505a;
+}
+
+.imgContainer {
+  margin-top: 24px;
+}
+
+.status {
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #f5a623;
+}
+
+.waitingForInquiry{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex: 1 1;
+  width: 100%;
+  &>div{
+    position:static;
+    width: 100%;
+    &:first-child{
+      box-sizing: border-box;
+      background-color: #fff;
+      color: #f5a623;
+      border:solid 1px #f5a623;
+    }
+  }
+}

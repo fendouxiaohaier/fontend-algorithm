@@ -1,0 +1,84 @@
+.doctorHomeWrapper {
+  height: 100%;
+  background: #f7f8fa;
+}
+
+.doctorPanel {
+  height: 135px;
+  padding: 40px 32px;
+  background: url("@/assets/common/yisehngzuye@3x.png") no-repeat center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top;
+}
+
+.content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.title {
+  font-family: PingFangSC-Medium;
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.subTitle {
+  display: inline-block;
+  margin-left: 15px;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.hospital {
+  opacity: 0.6;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.service {
+  padding: 20px 32px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.introWrapper {
+  padding: 0 32px 120px 32px;
+}
+
+.introPanel {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.introTitle {
+  font-family: PingFangSC-Medium;
+  font-size: 32px;
+  color: #48505a;
+  padding: 32px;
+}
+
+.intro {
+  font-family: PingFangSC-Light;
+  font-size: 32px;
+  color: #48505a;
+  padding: 32px;
+  word-wrap:break-word;
+  word-break:break-all;
+}
+
+.underlineFix {
+  margin: 0 !important;
+}

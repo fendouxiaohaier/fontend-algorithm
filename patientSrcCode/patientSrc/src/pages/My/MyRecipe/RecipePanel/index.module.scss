@@ -1,0 +1,13 @@
+.recipeWrapper {
+  border-radius: 8px;
+  background: #ffffff;
+  :global(.am-list-extra){
+    min-width:30%;
+  }
+  .text {
+    color: #888;
+  }
+  
+}
+
+

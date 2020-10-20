@@ -1,0 +1,40 @@
+
+.content{
+  height: 100%;
+  background: #f7f8fa;
+  .notice{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 30px;
+  }
+  p{
+    margin-bottom: 12px;
+    padding: 0 30px;
+    font-family: PingFangSC-Light;
+    font-size: 28px;
+    color: #454553;
+    letter-spacing: 0;
+    text-align: justify;
+    line-height: 40px;
+  }
+
+  .line{
+    height: 1px;
+    margin: 40px 32px;
+    background: #E2E7F1;
+  }
+}
+
+.send{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #0064FF ;
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}

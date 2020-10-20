@@ -1,0 +1,299 @@
+@import "./mixin.scss";
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 解决IOS默认滑动很卡的情况 */
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  width: 100%;
+}
+html * {
+  outline: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* 禁止缩放表单 */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input {
+  resize: none;
+  border: none;
+}
+
+/* 取消链接高亮  */
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* 设置HTML5元素为块 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+textarea {
+  outline: none;
+}
+
+input,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+  touch-action: manipulation;
+  font-family: PingFangSC-Regular;
+}
+
+#root,
+.app {
+  height:100%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #b2b9c2;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b2b9c2;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b2b9c2;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b2b9c2;
+}
+
+a {
+  text-decoration: none;
+  color: #007aff;
+}
+
+textarea {
+  -webkit-appearance: none;
+}
+
+// #root .am-list-item .am-list-line {
+//   padding-right: 0;
+//   margin-right: 15px;
+// }
+/* 去掉列表前的标识, li 会继承 */
+ol,
+ul {
+  list-style: none;
+}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+/* 清除浮动 */
+.clearfix {
+  overflow: hidden;
+  _zoom: 1;
+}
+
+body.modal-open {
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  height:100%;
+  background-color: #f4f7fc;
+}
+
+.am-list-line {
+  &::after {
+    content: none !important;
+  }
+}
+
+.am-list-body {
+  &::before {
+    content: none !important;
+  }
+  &::after {
+    content: none !important;
+  }
+}
+
+.am-list-item {
+  min-height: 109px !important;
+  //margin-right: 20px;
+}
+.am-input-control {
+  > input {
+    text-align: right;
+    font-size: 32px !important;
+  }
+}
+.am-list-extra {
+  min-width: 70%;
+  font-size: 32px !important;
+}
+.am-image-picker-list {
+  padding: 0 !important;
+}
+.am-flexbox-item {
+  max-width: 128px;
+  border-radius: 8px;
+  margin-right: 32px !important;
+}
+// .am-list-item-middle {
+//   // padding-top: 10px;
+//   // padding-bottom: 10px;
+//   //min-height: 112px;
+// }
+.slider-list {
+  height: 230px !important;
+}
+.am-checkbox.am-checkbox-checked .am-checkbox-inner {
+  border-color: #ff6b00 !important;
+  background: #ff6b00 !important;
+}
+
+.am-tab-bar-bar {
+  height: auto !important;
+}
+
+.am-tab-bar-tab {
+  padding: 10px 0;
+}
+
+.am-tab-bar-tab-title {
+  font-size: 20px !important;
+}
+
+.am-input-label {
+  font-size: 32px !important;
+  width: auto !important;
+}
+
+.am-list-content {
+  font-size: 32px !important;
+  width: auto !important;
+}
+
+.am-list-brief{
+  font-size:28px!important;
+}
+
+.am-picker-col-item-selected{
+  font-size:32px!important;
+}
+
+.am-picker-col-item{
+  font-size:28px!important;
+}

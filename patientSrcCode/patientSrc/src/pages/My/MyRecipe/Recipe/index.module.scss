@@ -1,0 +1,153 @@
+.recipePanel {
+  background: #fff;
+  padding: 53px 32px;
+  padding-bottom: 100px;
+}
+
+.title {
+  font-family: PingFangSC-Regular;
+  font-size: 38px;
+  color: #454553;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: PingFangSC-Medium;
+  font-size: 36px;
+  color: #454553;
+  letter-spacing: 20px;
+  margin-top: 11px;
+  text-align: center;
+}
+
+.type {
+  position: absolute;
+  top: 103px;
+  right: 32px;
+  border: 2px solid #454553;
+  border-radius: 4px;
+  font-size: 24px;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.tagLine {
+  margin-top: 52px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transNo {
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+  color: #0064ff;
+}
+
+.time {
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+  color: #8f8f98;
+}
+
+.patientLineWrapper {
+  margin-top: 60px;
+}
+
+.patientLine {
+  font-family: PingFangSC-Medium;
+  font-size: 34px;
+  color: #454553;
+  padding: 32px 0;
+  border-bottom: 2px solid #454553;
+}
+
+.patientData {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.medicationWrapper {
+  margin-top: 52px;
+  border-bottom: 2px solid #454553;
+}
+
+.rp {
+  font-family: PingFangSC-Medium;
+  font-size: 50px;
+  color: #454553;
+  margin-bottom: 44px;
+}
+
+.drugPanel {
+  margin-bottom: 40px;
+}
+
+.drugTitle {
+  font-family: PingFangSC-Medium;
+  font-size: 38px;
+  color: #454553;
+}
+
+.drugIntro {
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+  color: #454553;
+  margin-top: 24px;
+}
+
+.checker {
+  position: relative;
+  padding-bottom: 72px;
+  border-bottom: 2px solid #454553;
+}
+
+.doctorIntro {
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+  color: #454553;
+  margin-top: 24px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.doctorSign {
+  width: 140px;
+  height: 68px;
+  display: inline-block;
+}
+
+.notice {
+  font-family: PingFangSC-Light;
+  font-size: 22px;
+  color: #8f8f98;
+  padding: 42px 0 42px;
+}
+
+.noticeText {
+  margin-top: 10px;
+}
+
+.stampPanel {
+  position: absolute;
+  top: 53px;
+  left: 32px;
+}
+
+.stamp {
+  width: 186px;
+}
+
+.hospitalStamp {
+  position: absolute;
+  top: 32px;
+  right: 64px;
+  width: 220px;
+}
+
+.disable {
+  opacity: 0.3;
+}

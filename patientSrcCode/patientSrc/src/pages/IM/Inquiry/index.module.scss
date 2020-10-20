@@ -1,0 +1,171 @@
+.imWrapper {
+  min-height: 100%;
+  background: #f7f8fa;
+}
+.doctorPanel {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 32px;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 128px;
+  z-index: 9;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size:cover;
+  background-position: top;
+}
+
+.intro {
+  margin-left: 20px;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: PingFangSC-Medium;
+  font-size: 30px;
+  color: #48505a;
+}
+
+.subTitle {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  margin-left: 20px;
+}
+
+.content {
+  opacity: 0.8;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #48505a;
+  margin-top: 10px;
+}
+
+.imContainer {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: auto;
+  padding: 164px 32px 32px;
+  &.finished {
+    padding-bottom: 300px;
+  }
+}
+
+.inputWrapper {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+}
+
+.poperWrapper {
+  margin-bottom: 20px;
+}
+
+.historyButton {
+  margin-bottom: 20px;
+  text-align: center;
+  color:#0061ff;
+}
+
+.poperImage {
+  max-width: 100%;
+}
+
+.waitingNotice {
+  width: 640px;
+  height: 560px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.waitingIcon {
+  width: 160px;
+}
+
+.waitingNoticeText {
+  font-family: PingFangSC-Medium;
+  font-size: 34px;
+  color: #0061ff;
+  margin-top: 24px;
+}
+
+.waitingContent {
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #48505a;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.appointmentTime {
+  opacity: 0.8;
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #48505a;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.servicePanelWrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 32px;
+  background: #fff;
+}
+
+.serviceFinishedText {
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #48505a;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.service {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.imCustomImage {
+  width: 60vw;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.maskLayer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  &.show {
+    display: flex;
+  }
+}

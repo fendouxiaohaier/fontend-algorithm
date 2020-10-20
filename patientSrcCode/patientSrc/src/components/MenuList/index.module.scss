@@ -1,0 +1,15 @@
+.menuListWrapper {
+  position: relative;
+  z-index: 99;
+  :global(.am-list-extra){
+    min-width: 50%;
+  }
+}
+.addPatient{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-top: solid 1px #e2e7f1;
+  border-bottom:solid 1px #e2e7f1;
+  background-color:#fff;
+}

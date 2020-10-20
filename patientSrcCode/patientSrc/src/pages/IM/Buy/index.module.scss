@@ -1,0 +1,244 @@
+.imWrapper {
+  min-height: 100%;
+  background: #f7f8fa;
+}
+.doctorPanel {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 32px;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 128px;
+  z-index: 9;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size:cover;
+  background-position: top;
+}
+
+.intro {
+  margin-left: 20px;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: PingFangSC-Medium;
+  font-size: 30px;
+  color: #48505a;
+}
+
+.subTitle {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  margin-left: 20px;
+}
+
+.content {
+  opacity: 0.8;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #48505a;
+  margin-top: 10px;
+}
+
+.imContainer {
+  width: 100%;
+  height: calc(100vh - 160px);
+  overflow: auto;
+  padding: 164px 32px 32px;
+  &.finished {
+    padding-bottom: 300px;
+  }
+}
+
+.inputWrapper {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+}
+
+.poperWrapper {
+  margin-bottom: 20px;
+}
+
+.historyButton {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.poperImage {
+  max-width: 100%;
+}
+
+.waitingNotice {
+  width: 640px;
+  height: 560px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.waitingIcon {
+  width: 160px;
+}
+
+.waitingNoticeText {
+  font-family: PingFangSC-Medium;
+  font-size: 34px;
+  color: #0061ff;
+  margin-top: 24px;
+}
+
+.waitingContent {
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #48505a;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.appointmentTime {
+  opacity: 0.8;
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #48505a;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.servicePanelWrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 32px;
+  background: #fff;
+}
+
+.serviceFinishedText {
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #48505a;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.service {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.imCustomImage {
+  width: 60vw;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.prescription{
+  font-family: PingFangSC-Medium;
+  box-sizing: border-box;
+  display: flex;
+  padding:2.3vw 0;
+  flex-direction:column;
+  width: auto;
+  background-color:#fff;
+  .title{
+    padding:0 2.7vw;
+    display:flex;
+    margin-bottom:20px;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:baseline;
+    color: #c93;
+    font-size:30px;
+    .transNo{
+      font-size:24px;
+      color:#48505A;
+    }
+  }
+  .result{
+    margin:0 2.7vw;
+    padding-bottom:20px;
+    font-size:28px;
+    border-bottom:solid 1px #E0E0E0;
+  }
+  .prescriptionList{
+    padding:0 4.3vw;
+    margin-top:20px;
+    padding-bottom:20px;
+    display:flex;
+    align-items: flex-start;
+    border-bottom:solid 1px #E0E0E0;
+    .tag{
+      color:#c93;
+      flex-basis:50px;
+      margin-right:10px;
+      font-size:30px;
+    }
+    .list{
+     
+      flex-grow:1;
+      li{
+        display: none;
+        .name{
+          padding-bottom:15px;
+          color:#48505A;
+          font-size:27px;
+        }
+        .method{
+          padding-bottom:15px;
+          color:rgba($color: #48505A, $alpha: 0.8);
+          font-size:24px;
+          
+        }
+      }
+      :first-child{
+        display: block;
+      }
+    }
+  }
+  .details{
+    margin-top:20px;
+    text-align:center;
+    color:#4A90E2;
+    font-size:27px;
+  }
+}
+
+.btnBox{
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  bottom: 100px;
+  padding: 5px 20px;
+  background: #ffffff;
+  button{
+    border: 1px solid #f57436;
+    background: #ffffff;
+    color: #f57436;
+    padding: 10px 30px;
+    border-radius: 30px;
+  }
+  .btnR{
+    float: right;
+  }
+}

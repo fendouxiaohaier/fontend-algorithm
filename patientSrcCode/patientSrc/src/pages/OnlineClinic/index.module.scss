@@ -1,0 +1,18 @@
+.contentWrapper{
+  min-height: 100%;
+  background-color:#f7f8fa;
+  .listVewBox {
+    padding: 32px;
+    .line{
+      height:32px;
+      background-color:#f7f8fa;
+    }
+    :global(.am-list-footer){
+      padding:0;
+      .doctorFooter{
+        padding:30px;
+        text-align: center;
+      }
+    }
+  }
+}

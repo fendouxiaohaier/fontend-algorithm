@@ -1,0 +1,71 @@
+.prescription{
+  font-family: PingFangSC-Medium;
+  box-sizing: border-box;
+  display: flex;
+  padding:4.3vw 0;
+  flex-direction:column;
+  width: 91.1vw;
+  background-color:#fff;
+  .title{
+    padding:0 4.3vw;
+    display:flex;
+    margin-bottom:20px;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:baseline;
+    color:#FE6B00;
+    font-size:40px;
+    .transNo{
+      font-size:24px;
+      color:#48505A;
+    }
+  }
+  .result{
+    margin:0 4.3vw;
+    padding-bottom:20px;
+    font-size:28px;
+    border-bottom:solid 1px #E0E0E0;
+  }
+  .prescriptionList{
+    padding:0 4.3vw;
+    margin-top:20px;
+    padding-bottom:20px;
+    display:flex;
+    align-items: flex-start;
+    border-bottom:solid 1px #E0E0E0;
+    .tag{
+      color:#FE6B00;
+      flex-basis:20px;
+      margin-right:10px;
+      font-size:30px;
+    }
+    .list{
+     
+      flex-grow:1;
+      li{
+        border-bottom:solid 1px #E0E0E0;
+        .name{
+          padding-bottom:15px;
+          color:#48505A;
+          font-size:30px;
+        }
+        .method{
+          padding-bottom:15px;
+          color:rgba($color: #48505A, $alpha: 0.8);
+          font-size:24px;
+          
+        }
+      }
+      :last-child{
+        border-bottom:none;
+      }
+    }
+  }
+  .details{
+    margin-top:20px;
+    text-align:center;
+    color:#4A90E2;
+    font-size:30px;
+  }
+
+}

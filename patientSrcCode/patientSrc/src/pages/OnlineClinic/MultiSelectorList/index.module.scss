@@ -1,0 +1,43 @@
+.menuPanel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color:#fff;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 32px;
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #48505a;
+  &.highlight {
+    color: #ff6b00;
+  }
+}
+
+.arrow {
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 3px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #48505a transparent transparent transparent;
+  &.highlight {
+    border-color: #ff6b00 transparent transparent transparent;
+  }
+}
+
+.popverScroll{
+  :global(.am-popover-inner){
+    max-height:420px;
+    overflow-y:scroll;
+  }
+}

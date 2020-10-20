@@ -1,0 +1,39 @@
+.serviceBlock {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 232px;
+  font-size: 32px;
+  font-family: PingFangSC-Regular;
+  background: #eef1f9;
+  color: #adb4be;
+  &.purple {
+    background: #edebfe;
+    color: #795fe6;
+  }
+  &.green {
+    background: #e5fcf7;
+    color: #28b099;
+  }
+  &.orange {
+    background: #fef4e0;
+    color: #f28e45;
+  }
+}
+
+.serviceIcon {
+  width: 64px;
+  height: 64px;
+}
+
+.serviceTitle {
+  margin-top: 20px;
+}
+
+.servicePrice {
+  font-family: PingFangSC-Light;
+  font-size: 24px;
+  margin-top: 5px;
+}

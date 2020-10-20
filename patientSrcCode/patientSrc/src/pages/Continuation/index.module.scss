@@ -1,0 +1,104 @@
+.checkboxLabel {
+  font-family: 'PingFangSC-Regular';
+  font-size: 28px;
+  color: #48505a;
+  
+  .checkbox {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    input {
+
+      display: none;
+    }
+
+    img {
+      width: 35px;
+      height: 35px;
+      margin: auto;
+    }
+  }
+}
+
+.content{
+  height: 100%;
+  background: #f7f8fa;
+  .itemBox{
+    padding: 20px;
+  }
+  .item{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .box{
+    padding: 10px 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+
+    .chuf{
+      width: 90%;
+
+      .gray{
+        color: #ccc;
+      }
+    }
+
+    .red{
+      color: red;
+      float: right;
+      padding-right: 20px;
+    }
+  }
+
+  .rpBox{
+    padding: 15px 20px;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+
+    .rp{
+      font-weight: bold;
+      margin:10px 30px 0 20px;
+    }
+  }
+
+  p{
+    margin: 10px 0;
+  }
+
+  .see{
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    color: #169bd4;
+  }
+}
+
+.send{
+  text-align: center;
+
+  button{
+    background: #169bd4;
+    padding: 20px 60px;
+    border-radius: 15px;
+    color: #ffffff;
+    border: none;
+    margin-top: 30px;
+    height: 80px;
+  }
+}
+
+.no{
+  text-align: center;
+  color: #949494;
+  margin-top: 50%;
+}
+
+.listBox{
+  height: 100%;
+  .list{
+    height: 90%;
+    overflow: auto;
+  }
+}

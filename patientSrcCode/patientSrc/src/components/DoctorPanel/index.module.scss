@@ -1,0 +1,149 @@
+.doctorPanel {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.doctorMessage {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size:100%;
+  background-position:top;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 16px;
+}
+
+.name {
+  font-family: PingFangSC-Medium;
+  font-size: 32px;
+  color: #48505a;
+}
+
+.dep {
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #454545;
+  display: inline-block;
+  margin-left: 24px;
+}
+
+.skill {
+  margin-top: 16px;
+  font-family: PingFangSC-Light;
+  word-wrap:break-word;
+  word-break:break-all;
+  font-size: 28px;
+  color: #48505a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  // autoprefixer有个bug会把-webkit-box-orient: vertical给干掉，加上/* autoprefixer: ignore next */就可以解决，详情可以查看：https://github.com/postcss/autoprefixer/issues/776
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  line-height: 40px;
+  .xinBox{
+    position: relative;
+    padding-left: 15px;
+  }
+    .xin{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+    p{
+      display: -webkit-inline-box;
+      margin-left: 40px;
+    }
+
+}
+
+.clock {
+  width: 32px;
+  height: 32px;
+}
+
+.schedule {
+  margin-top: 16px;
+  width: 386px;
+  height: 48px;
+  border-radius: 24px;
+  background: #ecf3ff;
+  font-family: PingFangSC-Light;
+  font-size: 28px;
+  color: #0061ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.line {
+  height: 0;
+  border-top: 1px solid #e2e7f1;
+  margin: 20px 0;
+}
+
+.tagWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 90px;
+}
+
+.tag {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  &:not(:last-of-type) {
+    &::after {
+      margin: 0 20px;
+      content: " ";
+      display: block;
+      height: 30px;
+      width: 0;
+      border-left: 1px solid #e2e7f1;
+    }
+  }
+}
+
+.tagImg {
+  width: 32px;
+}
+
+.tagPrice {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: PingFangSC-Medium;
+  font-size: 24px;
+  color: #f76969;
+}
+
+.disableTag {
+  font-family: PingFangSC-Regular;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #adb4be;
+}

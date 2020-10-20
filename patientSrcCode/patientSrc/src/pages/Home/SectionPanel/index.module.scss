@@ -1,0 +1,43 @@
+.sectionPanel {
+  background-color:#fff;
+}
+.sectionWrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.section {
+  width:50%;
+  border: 1px solid #ffffff;
+  height: 140px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.sectionText {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sectionTitle {
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+}
+
+.sectionContent {
+  font-family: PingFangSC-Light;
+  font-size: 24px;
+}
+
+.icon {
+  min-width: 70px;
+  min-height: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  margin: 0 18px 0 24px;
+}

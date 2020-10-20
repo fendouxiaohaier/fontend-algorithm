@@ -1,0 +1,16 @@
+.content {
+  min-height: 100vh;
+  background: #f6f6f6;
+  max-height: 100vh;
+  overflow: scroll;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100vw;
+}

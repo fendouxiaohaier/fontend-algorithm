@@ -1,0 +1,76 @@
+.content{
+  min-height: 100%;
+  background: #fff;
+  .starBox{
+    text-align: center;
+    padding-top: 30px;
+    h1{
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .xin{
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+    }
+  }
+
+  
+  .txtBox{
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    ul{
+      list-style: disc;
+      padding-left: 40px;
+    }
+    p{
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+    .praiseBox{
+      margin-bottom: 50px;
+      min-height: 30px;
+      .checkbox{
+        float: right;
+      }
+    }
+  }
+
+  .criticismBox{
+    text-align: center;
+    .crit{
+      margin-right: 30px;
+      color: #949494;
+      font-size: 35px;
+      line-height: 35px;
+    }
+  
+    .critCheck{
+      margin-right: 30px;
+      color: red;
+      font-size: 35px;
+      line-height: 35px;
+    }
+  }
+
+  .textarea{
+    border: 1px solid #000000;
+    margin-top: 10px;
+  }
+
+  .commit{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    color: #ffffff;
+    background: #169bd4;
+  }
+}

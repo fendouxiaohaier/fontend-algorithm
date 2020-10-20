@@ -1,0 +1,95 @@
+{
+  "name": "cra-ts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sentry/browser": "^5.21.1",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.13.5",
+    "@types/react": "16.8.13",
+    "@types/react-dom": "16.8.4",
+    "antd-mobile": "2.2.14",
+    "axios": "0.19.0",
+    "classname": "0.0.0",
+    "cos-js-sdk-v5": "0.5.19",
+    "dotenv-expand": "5.1.0",
+    "es6-promise": "4.2.8",
+    "lodash": "4.17.15",
+    "moment": "2.24.0",
+    "promise.prototype.finally": "3.1.0",
+    "qiniu-js": "2.5.4",
+    "qs": "6.7.0",
+    "react": "16.8.6",
+    "react-cache": "2.0.0-alpha.1",
+    "react-dom": "16.8.6",
+    "react-if": "3.4.3",
+    "react-redux": "7.0.3",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "2.1.8",
+    "redux-persist": "5.10.0",
+    "tim-js-sdk": "2.0.8",
+    "typescript": "3.4.3",
+    "weixin-js-sdk": "1.4.0-test"
+  },
+  "scripts": {
+    "eslint": "eslint --ext .js,.jsx,.tsx,.ts ./src",
+    "lint-staged": "lint-staged",
+    "start": "cross-env PORT=8000 REACT_APP_ENV=dev react-app-rewired start",
+    "build": "cross-env REACT_APP_ENV=prod react-app-rewired build",
+    "build:qa": "cross-env REACT_APP_ENV=qa react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eslint:fix": "eslint --ext .js,.jsx,.tsx,.ts --fix ./src"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "prettier --write"
+    ]
+  },
+  "hooks": {
+    "pre-commit": "npm run eslint"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "7.4.4",
+    "@sentry/webpack-plugin": "^1.12.1",
+    "@types/classnames": "2.2.9",
+    "@types/lodash": "4.14.136",
+    "@types/qiniu-js": "2.5.0",
+    "@types/qs": "6.5.3",
+    "@types/react-redux": "7.0.9",
+    "@types/react-router-dom": "4.3.4",
+    "@typescript-eslint/eslint-plugin": "1.13.0",
+    "@typescript-eslint/parser": "2.0.0",
+    "babel-eslint": "9.0.0",
+    "babel-plugin-import": "1.12.0",
+    "cross-env": "5.2.0",
+    "customize-cra": "0.2.14",
+    "dotenv": "8.1.0",
+    "eslint": "5.12.0",
+    "eslint-config-alloy": "1.4.2",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-plugin-jsx-control-statements": "2.2.1",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.14.3",
+    "eslint-plugin-typescript": "0.14.0",
+    "husky": "3.0.4",
+    "install": "0.13.0",
+    "lint-staged": "9.2.4",
+    "node-sass": "4.12.0",
+    "postcss-px-to-viewport": "1.1.1",
+    "prettier": "1.18.2",
+    "react-app-rewired": "2.1.3",
+    "react-wx-images-viewer": "1.0.6",
+    "redux-thunk": "2.3.0",
+    "typescript-eslint-parser": "22.0.0",
+    "vconsole": "3.3.2"
+  }
+}
