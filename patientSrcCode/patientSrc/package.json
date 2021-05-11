@@ -14,7 +14,7 @@
     "cos-js-sdk-v5": "0.5.19",
     "dotenv-expand": "5.1.0",
     "es6-promise": "4.2.8",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "moment": "2.24.0",
     "promise.prototype.finally": "3.1.0",
     "qiniu-js": "2.5.4",
